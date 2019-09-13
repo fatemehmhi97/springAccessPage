@@ -1,0 +1,105 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="fa" dir="rtl"xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+
+<!--    <meta charset="utf-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{css/main.css}">-->
+<!--    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <title>Access Page </title>-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
+<!--<style>-->
+<!--    body {-->
+<!--        margin: 0;-->
+<!--        font-family: "Dubai-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;-->
+<!--        font-size: 0.875rem;-->
+<!--        font-weight: 400;-->
+<!--        line-height: 1.5;-->
+<!--        color: #212529;-->
+<!--        background-color:#FFF;-->
+<!--    }-->
+
+
+
+<!--       .centerBlock {-->
+<!--           display: table;-->
+<!--           margin: auto;-->
+<!--       }-->
+
+<!--</style>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<div class="jumbotron text-center">-->
+<!--    <h1>سطوح دسترسی</h1>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="centerBlock col-sm-12 col-md-11 col-lg-11">-->
+<!--                <table class="table table-striped  shadow p-3 mb-5 bg-white rounded text-center">-->
+<!--                    <thead >-->
+<!--                    <tr>-->
+<!--                        <th scope="col"class="text-center">عنوان صفحه </th>-->
+<!--                        <th scope="col"class="text-center">کاربر</th>-->
+<!--                        <th scope="col"class="text-center">مدیر</th>-->
+<!--                        <th scope="col"class="text-center">مدیر پنل</th>-->
+<!--                    </tr>-->
+<!--                    </thead>-->
+
+<!--                    <tbody>-->
+
+<!--                    <tr th:each="access : ${accessp}">-->
+<!--                        <th scope="row" class="text-center"th:text="${access.pageName}"> </th>-->
+<!--                        <td>-->
+
+<!--                            <label class="custom-control custom-checkbox">-->
+<!--                                <input type="checkbox" class="custom-control-input"name="active" th:checked="${access.user}" >-->
+<!--                                <span class="custom-control-indicator"></span>-->
+<!--                                <span class="custom-control-description"></span>-->
+<!--                            </label>-->
+
+<!--                        </td>-->
+<!--                        <td>-->
+
+<!--                            <label class="custom-control custom-checkbox">-->
+<!--                                <input type="checkbox" class="custom-control-input"name="active" th:checked="${access.admin}" >-->
+<!--                                <span class="custom-control-indicator"></span>-->
+<!--                                <span class="custom-control-description"></span>-->
+<!--                            </label>-->
+
+<!--                        </td>-->
+<!--                        <td>-->
+
+<!--                            <label class="custom-control custom-checkbox">-->
+<!--                                <input type="checkbox" class="custom-control-input"name="active" th:checked="${access.cadmin}" >-->
+<!--                                <span class="custom-control-indicator"></span>-->
+<!--                                <span class="custom-control-description"></span>-->
+<!--                            </label>-->
+
+<!--                        </td>-->
+
+<!--                    </tbody>-->
+<!--                </table>-->
+
+
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--    <button type="button" class="btn btn-warning centerBlock col-lg-2">ثبت تغییرات</button>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash; Essential javascripts for application to work&ndash;&gt;-->
+
+<!--<script th:src="@{js/jquery-3.2.1.min.js}"></script>-->
+<!--<script th:src="@{js/popper.min.js}"></script>-->
+<!--<script th:src="@{js/bootstrap.min.js}"></script>-->
+<!--<script th:src="@{js/main.js}"></script>-->
+<!--</body>-->
+<!--</html>-->

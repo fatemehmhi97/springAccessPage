@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" xmlns:th="http://www.thymeleaf.org">
+  <body>
+  <div th:fragment="mySidebar">
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user"><i class="icon fa fa-user-circle-o" style="font-size:2.5rem"></i>
+        <div>
+          <p class="app-sidebar__user-name">&nbsp;&nbsp;نام کاربری</p>
+        </div>
+      </div>
+      <ul class="app-menu">
+        <li><a class="app-menu__item active" th:href="@{/index}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">داشبورد</span></a></li>
+
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-industry"></i><span class="app-menu__label">گزارش گیری</span><i class="treeview-indicator fa fa-angle-left"></i></a>
+          <ul class="treeview-menu">
+            <li>
+              <a class="treeview-item" th:href="@{/certSummariesReport}"><i class="icon fa fa-cog"></i>خلاصه گزارش صدور گواهی</a>
+            </li>
+            <li>
+              <a class="treeview-item" th:href="@{/certificationSearch}"><i class="icon fa fa-cog"></i>گزارش صدور براساس شاخص</a>
+            </li>
+            <li>
+              <a class="treeview-item" th:href="@{/certDetailReport}"><i class="icon fa fa-cog"></i>جزئیات صدور گواهی اشخاص</a>
+            </li>
+            <li>
+              <a class="treeview-item" th:href="@{/checkCertificateStatus}"><i class="icon fa fa-cog"></i>بررسی وضعیت اعتبار گواهی</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-industry"></i><span class="app-menu__label">گواهی نامه ها و تعرفه ها</span><i class="treeview-indicator fa fa-angle-left"></i></a>
+          <ul class="treeview-menu">
+            <li>
+              <a class="treeview-item" th:href="@{/certTypeConfig}"><i class="icon fa fa-cog"></i> لیست گواهی های تعریف شده</a>
+            </li>
+            <li>
+              <a class="treeview-item" th:href="@{/certTariffConfig}"><i class="icon fa fa-cog"></i>لیست تعرفه های گواهی نامه ها</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  </body>
+</html>

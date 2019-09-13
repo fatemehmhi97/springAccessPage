@@ -1,0 +1,105 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" dir="rtl" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--  <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">-->
+<!--  &lt;!&ndash; Twitter meta&ndash;&gt;-->
+<!--  <meta property="twitter:card" content="summary_large_image">-->
+<!--  <meta property="twitter:site" content="@pratikborsadiya">-->
+<!--  <meta property="twitter:creator" content="@pratikborsadiya">-->
+<!--  &lt;!&ndash; Open Graph Meta&ndash;&gt;-->
+<!--  <meta property="og:type" content="website">-->
+<!--  <meta property="og:site_name" content="Vali Admin">-->
+<!--  <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">-->
+<!--  <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">-->
+<!--  <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">-->
+<!--  <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">-->
+<!--  <title>SignUp</title>-->
+<!--  <meta charset="utf-8">-->
+<!--  <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--  &lt;!&ndash; Main CSS&ndash;&gt;-->
+<!--  <link rel="stylesheet" type="text/css" th:href="@{css/main.css}">-->
+<!--  <link rel="stylesheet" type="text/css" th:href="@{css/customMain.css}">-->
+<!--  &lt;!&ndash; Font-icon css&ndash;&gt;-->
+<!--  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--</head>-->
+<!--  <body class="app sidebar-mini rtl">-->
+<!--  &lt;!&ndash; Navbar&ndash;&gt;-->
+<!--  <div th:replace="fragments/appbar::myAppbar"></div>-->
+<!--  &lt;!&ndash; Sidebar menu&ndash;&gt;-->
+<!--  <div th:replace="fragments/sidebar::mySidebar"></div>-->
+
+<!--    <main dir="rtl" style="text-align:right;font-family: 'Dubai-Regular'" class="app-content">-->
+<!--      <div class="app-title">-->
+<!--        <div>-->
+<!--          <h1><i class="fa fa-dashboard"></i> ثبت‌نام کاربر</h1>-->
+<!--          &lt;!&ndash; <p>Start a beautiful journey here</p> &ndash;&gt;-->
+<!--        </div>-->
+<!--        -->
+<!--      </div>-->
+<!--      <div class="row justify-content-center">-->
+<!--        <div class="col-md-6">-->
+<!--          <div class="tile">-->
+<!--            <div class="tile-body">-->
+<!--              <form method="post" th:action="@{/signUp}"-->
+<!--                    th:object="${user}" role="form">-->
+<!--                <div class="form-group">-->
+<!--                  <label for="">نام و نام خانوادگی</label>-->
+<!--                  <input type="text" th:field="*{persianname}" class="form-control">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="">نام کاربری</label>-->
+<!--                  <input type="text" th:field="*{username}" class="form-control" />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="">رمز عبور</label>-->
+<!--                  <input type="password" th:field="*{password}" class="form-control">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="">سمت کاری</label>-->
+<!--                  <input type="text" th:field="*{jobposition}" class="form-control" />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="">نقش</label>-->
+<!--                  <select th:field="*{role.name}" name="" id="" class="form-control">-->
+<!--                    <option value="مدیر پنل">مدیر پنل</option>-->
+<!--                    <option value="مدیریتی">مدیریتی</option>-->
+<!--                    <option value="کاربر">کاربر</option>-->
+<!--                  </select>-->
+<!--                </div>-->
+
+<!--                <div class="form-group">-->
+<!--                  <div class="utility">-->
+<!--                    <div class="animated-checkbox">-->
+<!--                      <label>-->
+<!--                        <input type="checkbox" id="checkbox" name="checkbox" th:field="*{userState}" >-->
+<!--                        <span class="label-text">فعال سازی پروفایل کاربر</span>-->
+<!--                      </label>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="tile-footer">-->
+<!--                  <div class="row">-->
+<!--                    <div class="col-md-8 col-md-offset-3">-->
+<!--                      <button class="btn btn-primary" type="submit">-->
+<!--                        <i class="fa fa-fw fa-lg fa-check-circle"></i> ثبت کاربر</button>&nbsp;&nbsp;&nbsp;-->
+<!--                      <a class="btn btn-secondary" th:href="@{/usersConfig}">-->
+<!--                        <i class="fa fa-fw fa-lg fa-times-circle"></i> انصراف</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </form>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </main>-->
+<!--    &lt;!&ndash; Essential javascripts for application to work&ndash;&gt;-->
+<!--    <script th:src="@{js/jquery-3.2.1.min.js}"></script>-->
+<!--    <script th:src="@{js/popper.min.js}"></script>-->
+<!--    <script th:src="@{js/bootstrap.min.js}"></script>-->
+<!--    <script th:src="@{js/main.js}"></script>-->
+<!--    -->
+<!--  </body>-->
+<!--</html>-->
