@@ -1,6 +1,7 @@
 package com.version6.demo6;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication

@@ -1,219 +1,219 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en" dir="rtl" xmlns:th="http://www.thymeleaf.org">-->
-<!--<head>-->
-<!--    <meta name="description"-->
-<!--          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">-->
-<!--    &lt;!&ndash; Twitter meta&ndash;&gt;-->
-<!--    <meta property="twitter:card" content="summary_large_image">-->
-<!--    <meta property="twitter:site" content="@pratikborsadiya">-->
-<!--    <meta property="twitter:creator" content="@pratikborsadiya">-->
-<!--    &lt;!&ndash; Open Graph Meta&ndash;&gt;-->
-<!--    <meta property="og:type" content="website">-->
-<!--    <meta property="og:site_name" content="Vali Admin">-->
-<!--    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">-->
-<!--    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">-->
-<!--    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">-->
-<!--    <meta property="og:description"-->
-<!--          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">-->
-<!--    <title>Index - PKI Monitoring</title>-->
-<!--    <meta charset="utf-8">-->
-<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--    &lt;!&ndash; Main CSS&ndash;&gt;-->
-<!--    <link rel="stylesheet" type="text/css" th:href="@{css/main.css}">-->
-<!--    &lt;!&ndash; Font-icon css&ndash;&gt;-->
-<!--    <link rel="stylesheet" type="text/css"-->
-<!--          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-<!--    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
-<!--</head>-->
-<!--<body class="app sidebar-mini rtl">-->
-<!--&lt;!&ndash; Navbar&ndash;&gt;-->
-<!--<div th:replace="fragments/appbar::myAppbar"></div>-->
-<!--&lt;!&ndash; Sidebar menu&ndash;&gt;-->
-<!--<div th:replace="fragments/sidebar::mySidebar"></div>-->
+<!DOCTYPE html>
+<html lang="en" dir="rtl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="description"
+          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <!-- Twitter meta-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@pratikborsadiya">
+    <meta property="twitter:creator" content="@pratikborsadiya">
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vali Admin">
+    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
+    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+    <meta property="og:description"
+          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <title>Index - PKI Monitoring</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{css/main.css}">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body class="app sidebar-mini rtl">
+<!-- Navbar-->
+<div th:replace="fragments/appbar::myAppbar"></div>
+<!-- Sidebar menu-->
+<div th:replace="fragments/sidebar::mySidebar"></div>
 
-<!--<main class="app-content">-->
-<!--    <div class="app-title">-->
-<!--        <div>-->
-<!--            <h3><i class="fa fa-dashboard"></i> داشبورد</h3>-->
-<!--            <h5>سامانه نظارت و ممیزی بر خط مراکز صدور گواهی الکترونیکی میانی</h5>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="row justify-content-center">-->
-<!--        <div class="col-md-5 col-lg-5">-->
-<!--            <div class="widget-small primary coloured-icon"><i class="icon fa fa-users fa-3x"></i>-->
-<!--                <div class="info">-->
-<!--                    <h4>گزارش گیری</h4>-->
-<!--                    <li>-->
-<!--                        <a th:href="@{/certSummariesReport}">خلاصه گزارش صدور گواهی</a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a th:href="@{/certificationSearch}">گزارش صدور گواهی بر اساس شاخص</a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a th:href="@{/certDetailReport}">جزئیات صدور گواهی اشخاص حقیقی یا حقوقی</a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a th:href="@{/checkCertificateStatus}">بررسی وضعیت اعتبار گواهی</a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a th:href="@{/crlAnalysis}">تحلیل لیست ابطال گواهی برای مراکز میانی</a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a th:href="@{/accessLevel}">دسترسی کاربران</a>-->
-<!--                    </li>-->
+<main class="app-content">
+    <div class="app-title">
+        <div>
+            <h3><i class="fa fa-dashboard"></i> داشبورد</h3>
+            <h5>سامانه نظارت و ممیزی بر خط مراکز صدور گواهی الکترونیکی میانی</h5>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-5 col-lg-5">
+            <div class="widget-small primary coloured-icon"><i class="icon fa fa-users fa-3x"></i>
+                <div class="info">
+                    <h4>گزارش گیری</h4>
+                    <li>
+                        <a th:href="@{/certSummariesReport}">خلاصه گزارش صدور گواهی</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/certificationSearch}">گزارش صدور گواهی بر اساس شاخص</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/certDetailReport}">جزئیات صدور گواهی اشخاص حقیقی یا حقوقی</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/checkCertificateStatus}">بررسی وضعیت اعتبار گواهی</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/crlAnalysis}">تحلیل لیست ابطال گواهی برای مراکز میانی</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/accessLevel}">دسترسی کاربران</a>
+                    </li>
+                </div>
+            </div>
+            <div class="widget-small orange coloured-icon"><i class="icon fa fa-certificate fa-3x"></i>
+                <div class="info">
+                    <h4>گواهی های الکترونیکی و تعرفه ها</h4>
+                    <li>
+                        <a th:href="@{/certTypeConfig}">لیست انواع گواهی های الکترونیکی</a>
+                    </li>
+                    <li>
+                        <a th:href="@{/certTariffConfig}">لیست تعرفه ها</a>
+                    </li>
+                </div>
+            </div>
+            <div class="widget-small danger coloured-icon"><i class="icon fa fa-star fa-3x"></i>
+                <div class="info">
+                    <h4>خدمات TSA</h4>
+                    <p><b>500</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 col-lg-7 ">
+            <div class="tile">
+                <h5>نمودار صدور گواهی نامه ها</h5>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <select  name="chartType" id="chartType" class="form-control">
+                                <option value=0>سالانه</option>
+                                <option value=1>فروردین</option>
+                                <option value=2>اردیبهشت</option>
+                                <option value=3>خرداد</option>
+                                <option value=4>تیر</option>
+                                <option value=5>مرداد</option>
+                                <option value=6>شهریور</option>
+                                <option value=7>مهر</option>
+                                <option value=8>آبان</option>
+                                <option value=9>آذر</option>
+                                <option value=10>دی</option>
+                                <option value=11>بهمن</option>
+                                <option value=12>اسفند</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <input type="text"  type="text" class="form-control text-center"/>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://plot.ly/~fatememhi97/2/?share_key=wpLWoI5KkLE4VzL3hpoVIE" target="_blank" title="" style="display: block; text-align: center;"><img src="https://plot.ly/~fatememhi97/2.png?share_key=wpLWoI5KkLE4VzL3hpoVIE" alt="نمودار صدور گواهی نامه ها" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+                    <script data-plotly="fatememhi97:2" sharekey-plotly="wpLWoI5KkLE4VzL3hpoVIE" src="https://plot.ly/embed.js" async></script>
+                </div>
+
+<!--                <div id="myDiv"></div>-->
+<!--                <div class="embed-responsive embed-responsive-16by9">-->
+<!--                    <canvas class="embed-responsive-item" id="lineChartDemo"></canvas>-->
 <!--                </div>-->
-<!--            </div>-->
-<!--            <div class="widget-small orange coloured-icon"><i class="icon fa fa-certificate fa-3x"></i>-->
-<!--                <div class="info">-->
-<!--                    <h4>گواهی های الکترونیکی و تعرفه ها</h4>-->
-<!--                    <li>-->
-<!--                        <a th:href="@{/certTypeConfig}">لیست انواع گواهی های الکترونیکی</a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a th:href="@{/certTariffConfig}">لیست تعرفه ها</a>-->
-<!--                    </li>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="widget-small danger coloured-icon"><i class="icon fa fa-star fa-3x"></i>-->
-<!--                <div class="info">-->
-<!--                    <h4>خدمات TSA</h4>-->
-<!--                    <p><b>500</b></p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col-md-7 col-lg-7 ">-->
-<!--            <div class="tile">-->
-<!--                <h5>نمودار صدور گواهی نامه ها</h5>-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-3">-->
-<!--                        <div class="form-group">-->
-<!--                            <select  name="chartType" id="chartType" class="form-control">-->
-<!--                                <option value=0>سالانه</option>-->
-<!--                                <option value=1>فروردین</option>-->
-<!--                                <option value=2>اردیبهشت</option>-->
-<!--                                <option value=3>خرداد</option>-->
-<!--                                <option value=4>تیر</option>-->
-<!--                                <option value=5>مرداد</option>-->
-<!--                                <option value=6>شهریور</option>-->
-<!--                                <option value=7>مهر</option>-->
-<!--                                <option value=8>آبان</option>-->
-<!--                                <option value=9>آذر</option>-->
-<!--                                <option value=10>دی</option>-->
-<!--                                <option value=11>بهمن</option>-->
-<!--                                <option value=12>اسفند</option>-->
-<!--                            </select>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-2">-->
-<!--                        <input type="text"  type="text" class="form-control text-center"/>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <a href="https://plot.ly/~fatememhi97/2/?share_key=wpLWoI5KkLE4VzL3hpoVIE" target="_blank" title="" style="display: block; text-align: center;"><img src="https://plot.ly/~fatememhi97/2.png?share_key=wpLWoI5KkLE4VzL3hpoVIE" alt="نمودار صدور گواهی نامه ها" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>-->
-<!--                    <script data-plotly="fatememhi97:2" sharekey-plotly="wpLWoI5KkLE4VzL3hpoVIE" src="https://plot.ly/embed.js" async></script>-->
-<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Essential javascripts for application to work-->
+<script th:src="@{js/jquery-3.2.1.min.js}"></script>
+<script th:src="@{js/popper.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/main.js}"></script>
+<!-- The javascript plugin to display page loading on top-->
+<script th:src="@{js/plugins/pace.min.js}"></script>
+<!-- Page specific javascripts-->
+<!--<script type="text/javascript" th:src="@{js/plugins/chart.js}"></script>-->
+<!--<script type="text/javascript">-->
+<!--    var data = {-->
+<!--        labels: ["January", "February", "March", "April", "May"],-->
+<!--        datasets: [-->
+<!--            {-->
+<!--                label: "My First dataset",-->
+<!--                fillColor: "rgba(220,220,220,0.2)",-->
+<!--                strokeColor: "rgba(220,220,220,1)",-->
+<!--                pointColor: "rgba(220,220,220,1)",-->
+<!--                pointStrokeColor: "#fff",-->
+<!--                pointHighlightFill: "#fff",-->
+<!--                pointHighlightStroke: "rgba(220,220,220,1)",-->
+<!--                data: [65, 59, 80, 81, 56]-->
+<!--            },-->
+<!--            {-->
+<!--                label: "My Second dataset",-->
+<!--                fillColor: "rgba(151,187,205,0.2)",-->
+<!--                strokeColor: "rgba(151,187,205,1)",-->
+<!--                pointColor: "rgba(151,187,205,1)",-->
+<!--                pointStrokeColor: "#fff",-->
+<!--                pointHighlightFill: "#fff",-->
+<!--                pointHighlightStroke: "rgba(151,187,205,1)",-->
+<!--                data: [28, 48, 40, 19, 86]-->
+<!--            }-->
+<!--        ]-->
+<!--    };-->
+<!--    var pdata = [-->
+<!--        {-->
+<!--            value: 300,-->
+<!--            color: "#46BFBD",-->
+<!--            highlight: "#5AD3D1",-->
+<!--            label: "Complete"-->
+<!--        },-->
+<!--        {-->
+<!--            value: 50,-->
+<!--            color: "#F7464A",-->
+<!--            highlight: "#FF5A5E",-->
+<!--            label: "In-Progress"-->
+<!--        }-->
+<!--    ]-->
 
-<!--&lt;!&ndash;                <div id="myDiv"></div>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="embed-responsive embed-responsive-16by9">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <canvas class="embed-responsive-item" id="lineChartDemo"></canvas>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</main>-->
-<!--&lt;!&ndash; Essential javascripts for application to work&ndash;&gt;-->
-<!--<script th:src="@{js/jquery-3.2.1.min.js}"></script>-->
-<!--<script th:src="@{js/popper.min.js}"></script>-->
-<!--<script th:src="@{js/bootstrap.min.js}"></script>-->
-<!--<script th:src="@{js/main.js}"></script>-->
-<!--&lt;!&ndash; The javascript plugin to display page loading on top&ndash;&gt;-->
-<!--<script th:src="@{js/plugins/pace.min.js}"></script>-->
-<!--&lt;!&ndash; Page specific javascripts&ndash;&gt;-->
-<!--&lt;!&ndash;<script type="text/javascript" th:src="@{js/plugins/chart.js}"></script>&ndash;&gt;-->
-<!--&lt;!&ndash;<script type="text/javascript">&ndash;&gt;-->
-<!--&lt;!&ndash;    var data = {&ndash;&gt;-->
-<!--&lt;!&ndash;        labels: ["January", "February", "March", "April", "May"],&ndash;&gt;-->
-<!--&lt;!&ndash;        datasets: [&ndash;&gt;-->
-<!--&lt;!&ndash;            {&ndash;&gt;-->
-<!--&lt;!&ndash;                label: "My First dataset",&ndash;&gt;-->
-<!--&lt;!&ndash;                fillColor: "rgba(220,220,220,0.2)",&ndash;&gt;-->
-<!--&lt;!&ndash;                strokeColor: "rgba(220,220,220,1)",&ndash;&gt;-->
-<!--&lt;!&ndash;                pointColor: "rgba(220,220,220,1)",&ndash;&gt;-->
-<!--&lt;!&ndash;                pointStrokeColor: "#fff",&ndash;&gt;-->
-<!--&lt;!&ndash;                pointHighlightFill: "#fff",&ndash;&gt;-->
-<!--&lt;!&ndash;                pointHighlightStroke: "rgba(220,220,220,1)",&ndash;&gt;-->
-<!--&lt;!&ndash;                data: [65, 59, 80, 81, 56]&ndash;&gt;-->
-<!--&lt;!&ndash;            },&ndash;&gt;-->
-<!--&lt;!&ndash;            {&ndash;&gt;-->
-<!--&lt;!&ndash;                label: "My Second dataset",&ndash;&gt;-->
-<!--&lt;!&ndash;                fillColor: "rgba(151,187,205,0.2)",&ndash;&gt;-->
-<!--&lt;!&ndash;                strokeColor: "rgba(151,187,205,1)",&ndash;&gt;-->
-<!--&lt;!&ndash;                pointColor: "rgba(151,187,205,1)",&ndash;&gt;-->
-<!--&lt;!&ndash;                pointStrokeColor: "#fff",&ndash;&gt;-->
-<!--&lt;!&ndash;                pointHighlightFill: "#fff",&ndash;&gt;-->
-<!--&lt;!&ndash;                pointHighlightStroke: "rgba(151,187,205,1)",&ndash;&gt;-->
-<!--&lt;!&ndash;                data: [28, 48, 40, 19, 86]&ndash;&gt;-->
-<!--&lt;!&ndash;            }&ndash;&gt;-->
-<!--&lt;!&ndash;        ]&ndash;&gt;-->
-<!--&lt;!&ndash;    };&ndash;&gt;-->
-<!--&lt;!&ndash;    var pdata = [&ndash;&gt;-->
-<!--&lt;!&ndash;        {&ndash;&gt;-->
-<!--&lt;!&ndash;            value: 300,&ndash;&gt;-->
-<!--&lt;!&ndash;            color: "#46BFBD",&ndash;&gt;-->
-<!--&lt;!&ndash;            highlight: "#5AD3D1",&ndash;&gt;-->
-<!--&lt;!&ndash;            label: "Complete"&ndash;&gt;-->
-<!--&lt;!&ndash;        },&ndash;&gt;-->
-<!--&lt;!&ndash;        {&ndash;&gt;-->
-<!--&lt;!&ndash;            value: 50,&ndash;&gt;-->
-<!--&lt;!&ndash;            color: "#F7464A",&ndash;&gt;-->
-<!--&lt;!&ndash;            highlight: "#FF5A5E",&ndash;&gt;-->
-<!--&lt;!&ndash;            label: "In-Progress"&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
-<!--&lt;!&ndash;    ]&ndash;&gt;-->
+<!--    var ctxl = $("#lineChartDemo").get(0).getContext("2d");-->
+<!--    var lineChart = new Chart(ctxl).Line(data);-->
 
-<!--&lt;!&ndash;    var ctxl = $("#lineChartDemo").get(0).getContext("2d");&ndash;&gt;-->
-<!--&lt;!&ndash;    var lineChart = new Chart(ctxl).Line(data);&ndash;&gt;-->
+<!--    var ctxp = $("#pieChartDemo").get(0).getContext("2d");-->
+<!--    var pieChart = new Chart(ctxp).Pie(pdata);-->
+<!--</script>-->
 
-<!--&lt;!&ndash;    var ctxp = $("#pieChartDemo").get(0).getContext("2d");&ndash;&gt;-->
-<!--&lt;!&ndash;    var pieChart = new Chart(ctxp).Pie(pdata);&ndash;&gt;-->
-<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<!--<script>-->
+<!--    /* JAVASCRIPT CODE GOES HERE */-->
+<!--    Plotly.d3.csv("https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv", function(err, rows){-->
 
-<!--&lt;!&ndash;<script>&ndash;&gt;-->
-<!--&lt;!&ndash;    /* JAVASCRIPT CODE GOES HERE */&ndash;&gt;-->
-<!--&lt;!&ndash;    Plotly.d3.csv("https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv", function(err, rows){&ndash;&gt;-->
-
-<!--&lt;!&ndash;        function unpack(rows, key) {&ndash;&gt;-->
-<!--&lt;!&ndash;            return rows.map(function(row) { return row[key]; });&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--        function unpack(rows, key) {-->
+<!--            return rows.map(function(row) { return row[key]; });-->
+<!--        }-->
 
 
-<!--&lt;!&ndash;        var trace1 = {&ndash;&gt;-->
-<!--&lt;!&ndash;            type: "scatter",&ndash;&gt;-->
-<!--&lt;!&ndash;            mode: "lines",&ndash;&gt;-->
-<!--&lt;!&ndash;            name: 'AAPL High',&ndash;&gt;-->
-<!--&lt;!&ndash;            x: unpack(rows, 'Date'),&ndash;&gt;-->
-<!--&lt;!&ndash;            y: unpack(rows, 'AAPL.High'),&ndash;&gt;-->
-<!--&lt;!&ndash;            line: {color: '#17BECF'}&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--        var trace1 = {-->
+<!--            type: "scatter",-->
+<!--            mode: "lines",-->
+<!--            name: 'AAPL High',-->
+<!--            x: unpack(rows, 'Date'),-->
+<!--            y: unpack(rows, 'AAPL.High'),-->
+<!--            line: {color: '#17BECF'}-->
+<!--        }-->
 
-<!--&lt;!&ndash;        var trace2 = {&ndash;&gt;-->
-<!--&lt;!&ndash;            type: "scatter",&ndash;&gt;-->
-<!--&lt;!&ndash;            mode: "lines",&ndash;&gt;-->
-<!--&lt;!&ndash;            name: 'AAPL Low',&ndash;&gt;-->
-<!--&lt;!&ndash;            x: unpack(rows, 'Date'),&ndash;&gt;-->
-<!--&lt;!&ndash;            y: unpack(rows, 'AAPL.Low'),&ndash;&gt;-->
-<!--&lt;!&ndash;            line: {color: '#7F7F7F'}&ndash;&gt;-->
-<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--        var trace2 = {-->
+<!--            type: "scatter",-->
+<!--            mode: "lines",-->
+<!--            name: 'AAPL Low',-->
+<!--            x: unpack(rows, 'Date'),-->
+<!--            y: unpack(rows, 'AAPL.Low'),-->
+<!--            line: {color: '#7F7F7F'}-->
+<!--        }-->
 
-<!--&lt;!&ndash;        var data = [trace1,trace2];&ndash;&gt;-->
+<!--        var data = [trace1,trace2];-->
 
-<!--&lt;!&ndash;        var layout = {&ndash;&gt;-->
-<!--&lt;!&ndash;            title: '',&ndash;&gt;-->
-<!--&lt;!&ndash;        };&ndash;&gt;-->
+<!--        var layout = {-->
+<!--            title: '',-->
+<!--        };-->
 
-<!--&lt;!&ndash;        Plotly.newPlot('myDiv', data, layout, {showSendToCloud: true});&ndash;&gt;-->
-<!--&lt;!&ndash;    })&ndash;&gt;-->
-<!--&lt;!&ndash;</script>&ndash;&gt;-->
-<!--</body>-->
-<!--</html>-->
+<!--        Plotly.newPlot('myDiv', data, layout, {showSendToCloud: true});-->
+<!--    })-->
+<!--</script>-->
+</body>
+</html>

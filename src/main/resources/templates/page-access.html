@@ -1,36 +1,96 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en" dir="rtl" xmlns:th="http://www.thymeleaf.org">-->
-<!--<head>-->
-<!--    <meta name="description"-->
-<!--          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">-->
-<!--    &lt;!&ndash; Twitter meta&ndash;&gt;-->
-<!--    <meta property="twitter:card" content="summary_large_image">-->
-<!--    <meta property="twitter:site" content="@pratikborsadiya">-->
-<!--    <meta property="twitter:creator" content="@pratikborsadiya">-->
-<!--    &lt;!&ndash; Open Graph Meta&ndash;&gt;-->
-<!--    <meta property="og:type" content="website">-->
-<!--    <meta property="og:site_name" content="Vali Admin">-->
-<!--    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">-->
-<!--    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">-->
-<!--    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">-->
-<!--    <meta property="og:description"-->
-<!--          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">-->
-<!--    <title>Page Access</title>-->
-<!--    <meta charset="utf-8">-->
-<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--    &lt;!&ndash; Main CSS&ndash;&gt;-->
-<!--    <link rel="stylesheet" type="text/css" th:href="@{css/main.css}">-->
-<!--    <link rel="stylesheet" type="text/css" th:href="@{css/customMain.css}">-->
-<!--    &lt;!&ndash; Font-icon css&ndash;&gt;-->
-<!--    <link rel="stylesheet" type="text/css"-->
-<!--          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
-<!--</head>-->
-<!--<body class="app sidebar-mini rtl">-->
-<!--&lt;!&ndash; Navbar&ndash;&gt;-->
-<!--<div th:replace="fragments/appbar::myAppbar"></div>-->
-<!--&lt;!&ndash; Sidebar menu&ndash;&gt;-->
-<!--<div th:replace="fragments/sidebar::mySidebar"></div>-->
+<!DOCTYPE html>
+<html lang="en" dir="rtl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="description"
+          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <!-- Twitter meta-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@pratikborsadiya">
+    <meta property="twitter:creator" content="@pratikborsadiya">
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vali Admin">
+    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
+    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
+    <meta property="og:description"
+          content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <title>Page Access</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" th:href="@{css/main.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/customMain.css}">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="app sidebar-mini rtl">
+<!-- Navbar-->
+<div th:replace="fragments/appbar::myAppbar"></div>
+<!-- Sidebar menu-->
+<div th:replace="fragments/sidebar::mySidebar"></div>
+<main class="app-content">
+    <br><br>
+    <div class="container ">
+        <div class="row">
+            <div class="centerBlock col-sm-9 col-md-9 col-lg-9">
+                <table class="table table-striped  shadow p-3 mb-5 bg-white rounded text-center ">
+                    <thead >
+                    <tr>
+                        <th scope="col"class="text-center">عنوان صفحه </th>
+                        <th scope="col"class="text-center">کاربر</th>
+                        <th scope="col"class="text-center">مدیر</th>
+                        <th scope="col"class="text-center">مدیر پنل</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <tr th:each="access : ${pageAccess}">
+                        <th scope="row" class="text-center"th:text="${access.page_name}"> </th>
+                        <td>
+
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"name="active" th:checked="${access.userRole}" >
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description"></span>
+                            </label>
+
+                        </td>
+                        <td>
+
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"name="active" th:checked="${access.adminRole}" >
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description"></span>
+                            </label>
+
+                        </td>
+                        <td>
+
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"name="active" th:checked="${access.panelAdminRole}" >
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description"></span>
+                            </label>
+
+                        </td>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+
+        <button type="button" class="btn btn-warning centerBlock col-lg-2">ثبت تغییرات</button>
+    </div>
+</main>
+
+<!----------------------------------------------------------------------------------------------------------->
 
 <!--<main dir="rtl" style="text-align:right;font-family: 'Dubai-Regular'" class="app-content">-->
 <!--    <div class="app-title">-->
@@ -100,11 +160,11 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</main>-->
-<!--&lt;!&ndash; Essential javascripts for application to work&ndash;&gt;-->
-<!--<script th:src="@{js/jquery-3.2.1.min.js}"></script>-->
-<!--<script th:src="@{js/popper.min.js}"></script>-->
-<!--<script th:src="@{js/bootstrap.min.js}"></script>-->
-<!--<script th:src="@{js/main.js}"></script>-->
+<!-- Essential javascripts for application to work-->
+<script th:src="@{js/jquery-3.2.1.min.js}"></script>
+<script th:src="@{js/popper.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/main.js}"></script>
 
-<!--</body>-->
-<!--</html>-->
+</body>
+</html>
